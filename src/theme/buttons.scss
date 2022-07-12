@@ -1,0 +1,6 @@
+ion-button {
+
+  &:not([size="small"]) {
+    height: 56px;
+  }
+}

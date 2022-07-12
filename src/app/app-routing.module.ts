@@ -4,12 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home-page',
+    redirectTo: 'welcome',
     pathMatch: 'full'
   },
   {
-    path: 'home-page',
-    loadChildren: () => import('./pages/home-page/home-page.module').then( m => m.HomePagePageModule)
+    path: 'welcome',
+    loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomePageModule)
   },
   {
     path: 'register-page-step1',

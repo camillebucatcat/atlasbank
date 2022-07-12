@@ -24,7 +24,43 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import '../src/theme/buttons.scss';
 @import '../src/theme/helpers.scss';
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('./assets/fonts/Avenir/Avenir.ttc');
+}
+
+@font-face {
+    font-family: 'AvenirLight';
+    src: url('./assets/fonts/Avenir/AvenirLight.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('./assets/fonts/Avenir/AvenirMedium.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirSemiBold';
+    src: url('./assets/fonts/Avenir/AvenirSemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirBold';
+    src: url('./assets/fonts/Avenir/AvenirBold.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir Black';
+    src: url('./assets/fonts/Avenir/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+    font-family: 'Kredit';
+    src: url('./assets/fonts/kredit back.ttf');
+}
 
 ion-content{
     --ion-background-color:#F2F5F8;
