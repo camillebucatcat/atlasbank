@@ -1,0 +1,7 @@
+{
+  "name": "atlasbank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
