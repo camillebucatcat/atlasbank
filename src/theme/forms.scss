@@ -6,8 +6,7 @@
     height: 45px;
     background: transparent;
 
-    &:focus {
-    }
+    
 
     &:disabled {
         background: transparent;
@@ -29,6 +28,8 @@
   .form-control {
     height: 38px;
     --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-end: 0;
   }
 }
 
@@ -38,8 +39,32 @@ ion-item.form-group {
   --padding-start: 12px;
   --inner-padding-end: 8px;
   border: 1px solid var(--ion-color-light-bluish-gray02);
+  --min-height: 62px;
 
   &.item-has-focus {
     --background: #fff;
+  }
+}
+
+
+.pincode {
+  margin-top: 10px;
+  
+  .form-control {
+    display: inline-block;
+    background: var(--ion-color-light-bluish-gray02);
+    border: 1px solid var(--ion-color-light-bluish-gray02);
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    --padding-end: 0;
+    font-size: 24px;
+    margin: 2px;
+
+    &.has-focus {
+      background: #fff;
+    }
   }
 }

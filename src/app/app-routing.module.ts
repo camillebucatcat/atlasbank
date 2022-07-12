@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'registration/enter-mobile-number',
     loadChildren: () => import('./pages/registration/enter-mobile-number/enter-mobile-number.module').then( m => m.EnterMobileNumberPageModule)
   },
+  {
+    path: 'registration/enter-name',
+    loadChildren: () => import('./pages/registration/enter-name/enter-name.module').then( m => m.EnterNamePageModule)
+  },
+  {
+    path: 'registration/verify-mobile-number',
+    loadChildren: () => import('./pages/registration/verify-mobile-number/verify-mobile-number.module').then( m => m.VerifyMobileNumberPageModule)
+  },
 ];
 
 @NgModule({
