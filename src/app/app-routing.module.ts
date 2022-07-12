@@ -12,8 +12,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomePageModule)
   },
   {
-    path: 'register-page-step1',
-    loadChildren: () => import('./pages/register-page-step1/register-page-step1.module').then( m => m.RegisterPageStep1PageModule)
+    path: 'registration/enter-mobile-number',
+    loadChildren: () => import('./pages/registration/enter-mobile-number/enter-mobile-number.module').then( m => m.EnterMobileNumberPageModule)
   },
 ];
 

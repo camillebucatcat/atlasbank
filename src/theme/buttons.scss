@@ -1,5 +1,6 @@
 ion-button {
-
+  --border-radius: 12px;
+  
   &:not([size="small"]) {
     height: 56px;
   }

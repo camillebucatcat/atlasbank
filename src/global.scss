@@ -25,67 +25,71 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 @import '../src/theme/buttons.scss';
+@import '../src/theme/forms.scss';
 @import '../src/theme/helpers.scss';
 
 @font-face {
-    font-family: 'Avenir';
-    src: url('./assets/fonts/Avenir/Avenir.ttc');
+  font-family: 'Avenir';
+  src: url('./assets/fonts/Avenir/Avenir.ttc');
 }
 
 @font-face {
-    font-family: 'AvenirLight';
-    src: url('./assets/fonts/Avenir/AvenirLight.ttf');
+  font-family: 'AvenirLight';
+  src: url('./assets/fonts/Avenir/AvenirLight.ttf');
 }
 
 @font-face {
-    font-family: 'AvenirMedium';
-    src: url('./assets/fonts/Avenir/AvenirMedium.ttf');
+  font-family: 'AvenirMedium';
+  src: url('./assets/fonts/Avenir/AvenirMedium.ttf');
 }
 
 @font-face {
-    font-family: 'AvenirSemiBold';
-    src: url('./assets/fonts/Avenir/AvenirSemiBold.ttf');
+  font-family: 'AvenirSemiBold';
+  src: url('./assets/fonts/Avenir/AvenirSemiBold.ttf');
 }
 
 @font-face {
-    font-family: 'AvenirBold';
-    src: url('./assets/fonts/Avenir/AvenirBold.ttf');
+  font-family: 'AvenirBold';
+  src: url('./assets/fonts/Avenir/AvenirBold.ttf');
 }
 
 @font-face {
-    font-family: 'Avenir Black';
-    src: url('./assets/fonts/Avenir/AvenirLTStd-Black.otf');
+  font-family: 'Avenir Black';
+  src: url('./assets/fonts/Avenir/AvenirLTStd-Black.otf');
 }
 
 @font-face {
-    font-family: 'Kredit';
-    src: url('./assets/fonts/kredit back.ttf');
+  font-family: 'Kredit';
+  src: url('./assets/fonts/kredit back.ttf');
 }
 
-ion-content{
-    --ion-background-color:#F2F5F8;
+ion-content,
+ion-header ion-toolbar{
+  --background:#F2F5F8;
 }
-ion-header{
-    background-color:#F2F5F8;
+
+ion-footer {
+  background:#F2F5F8;
 }
-ion-footer{
-    background-color:#F2F5F8;
-}
-ion-item{
-    --background: #F2F5F8;
-}
-.toolbar-content{
-    --background:#F2F5F8;
-}
-.gray-button{
-    --border-radius:12px;
-    height:56px;
-    color: #323232;
-    --background: #C0C6CB;
-    --background-activated:#8f959a;
-}
-.primary-button{
-    --border-radius:12px;
-    height:56px;
-    color: white;
+
+ion-header {
+  ion-toolbar {
+    --min-height: 76px;
+    --border-width: 0!important;
+
+    img.header-logo {
+      height: 48px;
+    }
+
+    .btn-flag {
+      position: relative;
+      overflow: hidden;
+      width: 24px;
+      height: 24px;
+      border-radius: 50px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: 1rem;
+    }
+  }
 }
