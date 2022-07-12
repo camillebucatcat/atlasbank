@@ -29,8 +29,14 @@
 ion-content{
     --ion-background-color:#F2F5F8;
 }
+ion-header{
+    background-color:#F2F5F8;
+}
 ion-footer{
     background-color:#F2F5F8;
+}
+ion-item{
+    --background: #F2F5F8;
 }
 .toolbar-content{
     --background:#F2F5F8;
