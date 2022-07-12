@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'registration/verify-mobile-number',
     loadChildren: () => import('./pages/registration/verify-mobile-number/verify-mobile-number.module').then( m => m.VerifyMobileNumberPageModule)
   },
+  {
+    path: 'registration/set-password',
+    loadChildren: () => import('./pages/registration/set-password/set-password.module').then( m => m.SetPasswordPageModule)
+  },
 ];
 
 @NgModule({
