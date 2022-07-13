@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'registration/set-password',
     loadChildren: () => import('./pages/registration/set-password/set-password.module').then( m => m.SetPasswordPageModule)
+  },  {
+    path: 'complete',
+    loadChildren: () => import('./pages/registration/complete/complete.module').then( m => m.CompletePageModule)
   },
+
 ];
 
 @NgModule({
