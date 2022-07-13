@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'registration/set-password',
     loadChildren: () => import('./pages/registration/set-password/set-password.module').then( m => m.SetPasswordPageModule)
-  },  {
+  },
+  {
     path: 'complete',
     loadChildren: () => import('./pages/registration/complete/complete.module').then( m => m.CompletePageModule)
   },
@@ -37,10 +38,6 @@ const routes: Routes = [
   {
     path: 'login-password-only',
     loadChildren: () => import('./pages/login/login-password-only/login-password-only.module').then( m => m.LoginPasswordOnlyPageModule)
-  },
-  {
-    path: 'login-input-validation',
-    loadChildren: () => import('./pages/login/login-input-validation/login-input-validation.module').then( m => m.LoginInputValidationPageModule)
   },
 
 ];

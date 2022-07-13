@@ -1,4 +1,4 @@
- .footer-container{
+.footer-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,14 +15,36 @@
     margin-right: -15px;
  }
  .face-scan{
-    margin-top: 60%;
+    margin-top:30%;
  }
  .check-box{
     margin-top: -2px;
  }
- .password-button{
-   height: 50px;
- }
- .form-group{
-   height: 60px;
- }
+.form-group{
+    height:60px;
+}
+.password-button{
+    height:50px;
+}
+.exit-modal-logo{
+    height: 13px;
+    width: 13px;
+}
+.modal-main{
+    --border-radius: 20px 20px 0 0;
+    padding-top: 20px;
+    --backdrop-opacity:0.5;
+}
+.add-button{
+    height: 60px;
+    width: 60px;
+    --background:white;
+    --border-radius: 50%;
+    --border-color:#C0C6CB;
+    --background-activated:#C0C6CB;
+}
+.delete-button{
+    height: 60px;
+    width: 60px;
+    --border-radius: 50%;
+}
