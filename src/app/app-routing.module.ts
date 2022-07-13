@@ -28,16 +28,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/registration/set-password/set-password.module').then( m => m.SetPasswordPageModule)
   },
   {
+    path: 'registration/status',
+    loadChildren: () => import('./pages/registration/status/status.module').then(m => m.StatusPageModule)
+  },
+  {
     path: 'login',
     loadChildren: () => import('./pages/login/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'login-password-only',
     loadChildren: () => import('./pages/login/login-password-only/login-password-only.module').then( m => m.LoginPasswordOnlyPageModule)
-  },
-  {
-    path: 'registration/status',
-    loadChildren: () => import('./pages/registration/status/status.module').then( m => m.StatusPageModule)
   },
 ];
 
