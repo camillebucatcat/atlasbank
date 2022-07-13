@@ -16,6 +16,7 @@
   text-align: left;
   margin-bottom: 1rem;
   border-radius: 12px;
+  position: relative;
 
   ion-label {
     color: var(--ion-color-primary)!important;
@@ -23,11 +24,24 @@
     margin-bottom: 0!important;
   }
 
+  &.w-icon {
+    .form-control {
+      --padding-end: 2rem;
+    }
+  }
+
   .form-control {
     height: 38px;
     --padding-top: 0;
     --padding-bottom: 0;
     --padding-end: 0;
+  }
+
+  .type-toggle {
+    position: absolute;
+    right: 1rem;
+    color: var(--ion-color-dark);
+    bottom: 6px;
   }
 }
 

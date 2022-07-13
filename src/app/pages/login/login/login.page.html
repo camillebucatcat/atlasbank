@@ -21,9 +21,13 @@
       <ion-label position="stacked">Mobile number or email</ion-label>
       <ion-input class="form-control"></ion-input>
     </ion-item>
-    <ion-item class="form-group">
+    <ion-item class="form-group w-icon">
       <ion-label position="stacked">Password</ion-label>
-      <ion-input type="password" class="form-control"></ion-input>
+      <ion-input [type]="this.showPassword ? 'text' : 'password'" class="form-control"></ion-input>
+      <a class="type-toggle" (click)="toggleShow()">
+        <ion-icon class="show-option" [hidden]="showPassword" name="eye-off-outline"></ion-icon>
+        <ion-icon class="hide-option" [hidden]="!showPassword" name="eye-outline"></ion-icon>
+      </a>
     </ion-item>
     <ion-row>
       <ion-col size="6" class="flex-center">
