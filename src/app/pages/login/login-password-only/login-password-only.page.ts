@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-password-only.page.scss'],
 })
 export class LoginPasswordOnlyPage implements OnInit {
-
+  showPassword = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleShow() {
+    this.showPassword = !this.showPassword;
   }
 
 }

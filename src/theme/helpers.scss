@@ -61,6 +61,12 @@ $colors: primary, secondary, gray, dark, medium, danger, warning, black, success
   display: flex;
   align-items: center;
 }
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .flex-justify-center{
   display: flex;
   justify-content: center;
