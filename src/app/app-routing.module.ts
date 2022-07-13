@@ -39,7 +39,10 @@ const routes: Routes = [
     path: 'login-password-only',
     loadChildren: () => import('./pages/login/login-password-only/login-password-only.module').then( m => m.LoginPasswordOnlyPageModule)
   },
-
+  {
+    path: 'registration/status',
+    loadChildren: () => import('./pages/registration/status/status.module').then( m => m.StatusPageModule)
+  },
 ];
 
 @NgModule({
