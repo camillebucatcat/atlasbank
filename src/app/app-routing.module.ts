@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./pages/login/login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'login-password-only',
+    loadChildren: () => import('./pages/login/login-password-only/login-password-only.module').then( m => m.LoginPasswordOnlyPageModule)
+  },
 
 ];
 
