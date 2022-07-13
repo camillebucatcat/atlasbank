@@ -1,50 +1,19 @@
-.footer-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- }
- .item-main{
-    --padding-start:1px;
- }
- .check-remember{
-    --background:#C0C6CB;
-    --border-color:#C0C6CB;
-    --border-radius:4px;
- }
- .right-label{
-    margin-right: -15px;
- }
- .face-scan{
-    margin-top:30%;
- }
- .check-box{
-    margin-top: -2px;
- }
-.form-group{
-    height:60px;
-}
-.password-button{
-    height:50px;
-}
-.exit-modal-logo{
-    height: 13px;
-    width: 13px;
-}
-.modal-main{
-    --border-radius: 20px 20px 0 0;
-    padding-top: 20px;
-    --backdrop-opacity:0.5;
-}
-.add-button{
-    height: 60px;
-    width: 60px;
-    --background:white;
-    --border-radius: 50%;
-    --border-color:#C0C6CB;
-    --background-activated:#C0C6CB;
-}
-.delete-button{
-    height: 60px;
-    width: 60px;
-    --border-radius: 50%;
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+
+  ion-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: .5rem;
+    --background: #E6E8EB;
+    --border-color: #E6E8EB;
+  }
+
+  div {
+    width: calc(100% - (30px + 1rem));
+    line-height: 1.5;
+    text-align: left;
+  }
 }

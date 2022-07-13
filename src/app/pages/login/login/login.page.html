@@ -1,64 +1,67 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar class="toolbar-content">
-    <ion-title class="ion-text-center">
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
       <img class="header-logo" src="./assets/images/app-logo.svg">
     </ion-title>
     <div slot="end">
-       <div class="btn-flag ion-activatable ripple-parent" style="background-image: url('https://flagcdn.com/za.svg')">
-         <ion-ripple-effect></ion-ripple-effect>
-       </div>
+      <div class="btn-flag ion-activatable ripple-parent" style="background-image: url('https://flagcdn.com/za.svg')">
+        <ion-ripple-effect></ion-ripple-effect>
+      </div>
     </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding" scroll-y="false" [fullscreen]="true">
-
-  <div class="mt-2 fs-32 fw-600 ion-text-center">Welcome</div>
-  <div class="fs-16 fw-400 ion-text-center">Please sign in to continue</div>
-
-  <ion-item lines="none" class="mt-2 form-group">
-    <ion-label position="stacked">Mobile number or email</ion-label>
-    <ion-input mode="md" class="fs-18"></ion-input>
-  </ion-item>
-
-  <ion-item lines="none" class="mt-1 form-group">
-    <ion-label position="stacked">Password</ion-label>
-    <ion-input mode="md" type="password" class="fs-18" mode="md"></ion-input>
-    <ion-button class="password-button" slot="end" fill="clear"><img slot="end" class="logo" src="../assets/icon/icons/password.svg"></ion-button>
-  </ion-item>
-
-  <ion-row class="mt-1">
-    <ion-col size="1" class="check-box">
-      <ion-checkbox mode="md" class="check-remember"></ion-checkbox>
-    </ion-col>
-
-    <ion-col class="">
-      <div class="fs-12 text-primary">Remember me</div>
-    </ion-col>
-
-    <ion-col class="ion-text-right">
-      <div class="fs-12 fw-500">
-        <ion-router-link color="primary" class="" href="#">Forgot password?</ion-router-link>
-      </div>
-    </ion-col>
-  </ion-row>
-
-  <ion-button expand="block" class="mt-1 fs-15 text-initial" color="primary">Login</ion-button>
-
-  <div class="ion-text-center face-scan">
-    <img class="header-logo" src="./assets/icon/icons/facial-scan.svg">
+<ion-content class="ion-padding ion-text-center" scroll-y="false">
+  <div class="mt-3">
+    <span class="fw-600 fs-28">Welcome</span> <br>
+    <span class="text-medium">Register to continue</span>
   </div>
-
-</ion-content>
-
-<ion-footer class="ion-padding ion-no-border">
-  <div class="footer-container">
-    <div class="content-container">
-
-      <div class="mb-1 fs-15 text-dgray1 ion-text-center">Don’t have an account?</div>
-
-      <ion-button expand="block" class="fs-16 fw-500 text-initial" color="light-bluish-gray01">Register</ion-button>
-
+  <div class="mt-1">
+    <ion-item class="form-group">
+      <ion-label position="stacked">Mobile number or email</ion-label>
+      <ion-input class="form-control"></ion-input>
+    </ion-item>
+    <ion-item class="form-group">
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="password" class="form-control"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col size="6" class="flex-center">
+        <div class="checkbox-container w-100">
+          <ion-checkbox slot="start" mode="md"></ion-checkbox>
+          <div>Remember me</div>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-text-right">
+        <ion-button size="small" class="fw-800 fs-12 m-0" fill="clear">Forgot password?</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-button expand="block" disabled>Login</ion-button>
+    <div class="ion-text-center mt-2 mb-2">
+      <ion-button fill="clear">
+        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.3572 20.7143V14.4202C10.3572 12.1757 11.9809 10.3571 13.9837 10.3571H18.6429" stroke="#333333"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M47.6429 20.7143V14.4202C47.6429 12.1757 46.0193 10.3571 44.0167 10.3571H39.3572" stroke="#333333"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10.3572 37.2857V43.5798C10.3572 45.8232 11.9809 47.6428 13.9837 47.6428H18.6429" stroke="#333333"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M47.6429 37.2857V43.5798C47.6429 45.8232 46.0193 47.6428 44.0167 47.6428H39.3572" stroke="#333333"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M17.6071 22.7857V26.9286" stroke="#333333" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M38.3215 22.7857V26.9286" stroke="#333333" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M22.7858 37.2857C24.2993 38.9496 30.965 40.967 35.2143 37.2857" stroke="#333333" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M29 22.7857V31.2878C29 31.2878 28.482 33.1428 26.9286 33.1428" stroke="#333333" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </ion-button>
     </div>
   </div>
+</ion-content>
+<ion-footer class="ion-padding ion-text-center">
+  <div class="fs-14 text-dark mb-1">Don’t have an account? </div>
+  <ion-button color="light-bluish-gray01" expand="block">Register</ion-button>
 </ion-footer>
