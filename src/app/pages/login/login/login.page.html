@@ -1,0 +1,64 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="toolbar-content">
+    <ion-title class="ion-text-center">
+      <img class="header-logo" src="./assets/images/app-logo.svg">
+    </ion-title>
+    <div slot="end">
+       <div class="btn-flag ion-activatable ripple-parent" style="background-image: url('https://flagcdn.com/za.svg')">
+         <ion-ripple-effect></ion-ripple-effect>
+       </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" scroll-y="false" [fullscreen]="true">
+
+  <div class="mt-2 fs-32 fw-600 ion-text-center">Welcome</div>
+  <div class="fs-16 fw-400 ion-text-center">Please sign in to continue</div>
+
+  <ion-item lines="none" class="mt-2 form-group">
+    <ion-label position="stacked">Mobile number or email</ion-label>
+    <ion-input class="fs-18"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" class="mt-1 form-group">
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input class="fs-18"></ion-input>
+    <ion-button slot="end" fill="clear"></ion-button>
+  </ion-item>
+
+  <ion-row class="mt-1">
+    <ion-col size="1" class="check-box">
+      <ion-checkbox class="check-remember"></ion-checkbox>
+    </ion-col>
+
+    <ion-col class="">
+      <div class="fs-12 text-primary">Remember me</div>
+    </ion-col>
+
+    <ion-col class="ion-text-right">
+      <div class="fs-12 fw-500">
+        <ion-router-link color="primary" class="" href="#">Forgot password?</ion-router-link>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-button expand="block" class="mt-1 fs-15 text-initial" color="primary">Login</ion-button>
+
+  <div class="ion-text-center face-scan">
+    <img class="header-logo" src="./assets/icon/icons/facial-scan.svg">
+  </div>
+
+</ion-content>
+
+<ion-footer class="ion-padding ion-no-border">
+  <div class="footer-container">
+    <div class="content-container">
+
+      <div class="mb-1 fs-15 text-dgray1 ion-text-center">Don’t have an account?</div>
+
+      <ion-button expand="block" class="fs-16 fw-500 text-initial" color="light-bluish-gray01">Register</ion-button>
+
+    </div>
+  </div>
+</ion-footer>

@@ -1,0 +1,22 @@
+ .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .item-main{
+    --padding-start:1px;
+ }
+ .check-remember{
+    --background:#C0C6CB;
+    --border-color:#C0C6CB;
+    --border-radius:4px;
+ }
+ .right-label{
+    margin-right: -15px;
+ }
+ .face-scan{
+    margin-top: 60%;
+ }
+ .check-box{
+    margin-top: -2px;
+ }
