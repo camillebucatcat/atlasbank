@@ -1,0 +1,33 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .item-main{
+    --padding-start:1px;
+ }
+ .check-remember{
+    --background:#C0C6CB;
+    --border-color:#C0C6CB;
+    --border-radius:4px;
+ }
+ .right-label{
+    margin-right: -15px;
+ }
+ .face-scan{
+    margin-top:30%;
+ }
+ .check-box{
+    margin-top: -2px;
+ }
+.form-group{
+    height:60px;
+}
+.password-button{
+    height:50px;
+}
+.validation{
+    --background: #F9D4D4;
+    border-radius: 12px;
+    --min-height: 64px;
+}

@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'login-password-only',
     loadChildren: () => import('./pages/login/login-password-only/login-password-only.module').then( m => m.LoginPasswordOnlyPageModule)
   },
+  {
+    path: 'login-input-validation',
+    loadChildren: () => import('./pages/login/login-input-validation/login-input-validation.module').then( m => m.LoginInputValidationPageModule)
+  },
 
 ];
 
