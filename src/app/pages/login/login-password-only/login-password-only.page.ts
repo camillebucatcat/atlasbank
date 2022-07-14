@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-password-only.page.scss'],
 })
 export class LoginPasswordOnlyPage implements OnInit {
+  presentingElement = null;
   showPassword = false;
   constructor() { }
 
   ngOnInit() {
+    this.presentingElement = document.querySelector('.ion-page');
   }
 
   toggleShow() {
