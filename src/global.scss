@@ -63,11 +63,14 @@
   src: url('./assets/fonts/kredit back.ttf');
 }
 
-ion-list,
+
 ion-item,
 ion-content,
 ion-header ion-toolbar{
   --background:#F2F5F8;
+}
+ion-list{
+  background:#F2F5F8;
 }
 
 ion-footer {

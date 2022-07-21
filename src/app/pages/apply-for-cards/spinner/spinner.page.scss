@@ -1,0 +1,39 @@
+.ion-toolbar{
+    height: 15vh;
+    display: flex;
+
+}
+.loading {
+  margin-top: 4px;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border: 5px solid #E7ECF1;
+  border-radius: 50%;
+  border-top-color: #04508C;
+  animation: spin 5s ease-in-out infinite;
+  -webkit-animation: spin 5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+.spinner-bg{
+    background-color: white;
+    border-radius: 50px;
+}
+.spinner-container{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: auto;
+}
+.spinner-holder{
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

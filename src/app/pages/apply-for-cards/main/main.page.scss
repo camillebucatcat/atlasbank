@@ -1,0 +1,42 @@
+ion-item,
+ion-content,
+ion-header ion-toolbar{
+  --background:#04508C;
+}
+.settings-logo{
+  height: 24px;
+  width: 24px;
+}
+.card-display{
+  width: 319px;
+  height: 200px;
+  background-color: #1C154C;
+  margin: auto;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  color: white;
+}
+.card-container{
+  height: 25vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.apply-card-button{
+  height: 50px;
+  width: 211px;
+  background: white;
+  border-radius: 35px;
+  margin: auto;
+  color: #1C154C;
+}
+.activity-section{
+  background-color: white;
+  height: 694px;
+  border-radius: 30px;
+}
+.activity-image{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  
+}

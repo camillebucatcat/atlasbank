@@ -1,0 +1,24 @@
+.upload-photo{
+    width: 195px;
+    height: 167px;
+    background-color: #E7ECF1;
+    border-radius: 12px;
+    border-style: dashed;
+    border-color: #B8B8B8;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+.item-main{
+  --padding-start:1px;
+  font-size: 14px;
+}
+.list-container{
+  --padding-start:1px
+}
+li{
+  margin-left: -20px;
+}
+ul{
+  margin-top: 0px;
+}

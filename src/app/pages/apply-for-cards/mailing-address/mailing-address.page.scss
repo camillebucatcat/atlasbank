@@ -1,0 +1,26 @@
+.state-button{
+    display: flex;
+    height: 100%;
+}
+.header-container{
+    height: 7vh;
+  }
+  .search-item{
+    --min-height: 48px;
+    --background: #E7ECF1;
+    --border-radius: 12px;
+  }
+  .search-logo{
+    display: flex;
+    height: 100%;
+    margin-right: 0.1rem;
+  }
+  .separator{
+    border-bottom: 1px solid #E7E7E7;
+  }
+  .item-main{
+    --padding-start:1px;
+  }
+  .radio-main{
+    margin-right: 1.5rem;
+  }

@@ -1,0 +1,22 @@
+.input-button{
+  display: flex;
+  height: 100%;
+}
+.upload-photo{
+  height: 167px;
+  background-color: #E7ECF1;
+  border-radius: 12px;
+  border-style: dashed;
+  border-color: #B8B8B8;
+  display: flex;
+  justify-content: center;
+}
+.camera-label{
+  margin-top: 10px;
+}
+.camera-logo{
+  margin-top: 10px;
+}
+.retake-logo{
+  margin-right: 0.5rem;
+}

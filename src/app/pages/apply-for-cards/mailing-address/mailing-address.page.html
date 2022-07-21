@@ -1,0 +1,123 @@
+<div class="ion-page">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="" slot="start">
+      <ion-button (click)="modal.dismiss()"><img src="./assets/icon/icons/icon-left.svg"></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <div class="page-title-container">
+    <div class="fs-12 fw-400 text-dgray2">Step 3 of 5</div>
+    <div class="text-dark fs-28 fw-500">Personal<br>Information</div>
+  </div>
+  <p class="fs-14 ion-text-wrap text-dgray2 mb-2">Enter your mailing address below. If additional documentation is required, you may be asked to <br> submit a recent piece of mail validating the <br> address you enter</p>
+  <ion-item class="form-group">
+    <ion-label position="stacked">Address Line 1</ion-label>
+    <ion-input class="form-control"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+    <ion-label position="stacked">Address Line 1</ion-label>
+    <ion-input class="form-control"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+    <ion-label position="stacked">State</ion-label>
+    <ion-input class="form-control"></ion-input>
+    <ion-button slot="end" id="open-modal" size="small" class="fw-800 fs-12 state-button" fill="clear"><img src="./assets/icon/icons/carret-down.svg"></ion-button>
+  </ion-item>
+  <ion-item class="form-group">
+    <ion-label position="stacked">City</ion-label>
+    <ion-input class="form-control"></ion-input>
+  </ion-item>
+  <ion-item class="form-group">
+    <ion-label position="stacked">Zip code</ion-label>
+    <ion-input class="form-control"></ion-input>
+  </ion-item>
+
+  <!-- state modal -->
+  <ion-modal #modal trigger="open-modal" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header >
+        <ion-toolbar class="header-container">
+          <ion-buttons class="" slot="end">
+            <ion-button (click)="modal.dismiss()"><img src="./assets/icon/icons/exit-modal.svg"></ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content class="ion-text-center">
+        <div class="ion-padding">
+          <div class="fs-24 fw-500 mb-1 ion-text-left">Select your state</div>
+          <ion-item lines="none" class="search-item">
+            <ion-label slot="start"><img class="search-logo" src="./assets/icon/icons/search-gray.svg"></ion-label>
+            <ion-input placeholder="Search"></ion-input>
+          </ion-item>
+        </div>
+        <div class="separator"></div>
+        <div class="ion-padding">
+          <ion-list>
+            <ion-radio-group>
+              <ion-item lines="none" class="item-main">
+                <ion-label>Nebraska</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>Nevada</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>New Hampshire</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>New Jersey</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>New Mexico</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>New York</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>North Carolina</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>North Dakota</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>Ohio</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>Oklahoma</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>Oregon</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+              <ion-item lines="none" class="item-main">
+                <ion-label>Pennsylvania</ion-label>
+                <ion-radio class="radio-main fs-24" slot="start"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+        </div>
+       
+      </ion-content>
+      <ion-footer class="ion-padding ion-no-border ion-text-center">
+      </ion-footer>
+    </ng-template>
+  </ion-modal>
+  <!-- state modal -->
+</ion-content>
+<ion-footer class="ion-padding ion-text-center">
+  <ion-button class="" color="primary" expand="block">Continue</ion-button>
+  <ion-button expand="block" fill="clear" class="mt-1 fs-15 fw-500">Save & exit</ion-button>
+</ion-footer>
+</div>

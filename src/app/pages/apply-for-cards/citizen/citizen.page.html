@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="" slot="start">
+      <ion-button (click)="modal.dismiss()"><img src="./assets/icon/icons/icon-left.svg"></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <div class="page-title-container">
+    <div class="fs-12 fw-400 text-dgray2">Step 1 of 5</div>
+    <div class="text-dark fs-28 fw-500">Are you a <br>US-citizen?</div>
+  </div>
+  <label class="mt-2 container">
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+    <span class="fs-14 radio-label">Yes, I am!</span>
+  </label>
+  <label class="mt-2 container">
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+    <span class="fs-14 radio-label">No, I’m not!</span>
+  </label>
+  <!-- modal -->
+  <ion-modal #modal trigger="open-modal" class="modal-main" handle="false" [initialBreakpoint]="0.6" [breakpoints]="[0, 0.25, 0.5, 0.6, 0.75]">
+    <ng-template>
+      <ion-header >
+        <ion-toolbar class="header-container">
+          <ion-buttons class="" slot="end">
+            <ion-button (click)="modal.dismiss()"><img src="./assets/icon/icons/exit-modal.svg"></ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding ion-text-center">
+       <div class="fs-24 fw-500 marginnt-20 mb-1">Atlas Pay Card <br> Registration Saved</div>
+       <svg width="170" height="170" viewBox="0 0 170 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.1" cx="85" cy="85" r="85" fill="#43B864"/>
+        <circle opacity="0.3" cx="85" cy="85" r="57" fill="#43B864"/>
+        <circle cx="85" cy="85" r="36" fill="#43B864"/>
+        <path d="M94.71 82.29L88.71 76.29C88.6178 76.2 88.5092 76.1287 88.39 76.08C88.266 76.0296 88.1338 76.0025 88 76H80C79.2044 76 78.4413 76.3161 77.8787 76.8787C77.3161 77.4413 77 78.2044 77 79V91C77 91.7956 77.3161 92.5587 77.8787 93.1213C78.4413 93.6839 79.2044 94 80 94H92C92.7956 94 93.5587 93.6839 94.1213 93.1213C94.6839 92.5587 95 91.7956 95 91V83C95.0008 82.8684 94.9755 82.7379 94.9258 82.6161C94.876 82.4943 94.8027 82.3834 94.71 82.29ZM83 78H87V80H83V78ZM89 92H83V89C83 88.7348 83.1054 88.4804 83.2929 88.2929C83.4804 88.1054 83.7348 88 84 88H88C88.2652 88 88.5196 88.1054 88.7071 88.2929C88.8946 88.4804 89 88.7348 89 89V92ZM93 91C93 91.2652 92.8946 91.5196 92.7071 91.7071C92.5196 91.8946 92.2652 92 92 92H91V89C91 88.2044 90.6839 87.4413 90.1213 86.8787C89.5587 86.3161 88.7956 86 88 86H84C83.2044 86 82.4413 86.3161 81.8787 86.8787C81.3161 87.4413 81 88.2044 81 89V92H80C79.7348 92 79.4804 91.8946 79.2929 91.7071C79.1054 91.5196 79 91.2652 79 91V79C79 78.7348 79.1054 78.4804 79.2929 78.2929C79.4804 78.1054 79.7348 78 80 78H81V81C81 81.2652 81.1054 81.5196 81.2929 81.7071C81.4804 81.8946 81.7348 82 82 82H88C88.2652 82 88.5196 81.8946 88.7071 81.7071C88.8946 81.5196 89 81.2652 89 81V79.41L93 83.41V91Z" fill="white"/>
+       </svg>
+       <p class="fs-14 text-justify">The information you have entered so far has <br> been saved. You can return at any time to <br> complete your registration.</p>
+       <ion-row class="mt-2">
+        <ion-col>
+          <ion-button expand="block" fill="clear" class="mt-1 fs-15 fw-500">Exit</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="mt-1" color="primary" id="open-modal" expand="block">Continue</ion-button>
+        </ion-col>
+       </ion-row>
+      </ion-content>
+      <ion-footer>
+      </ion-footer>
+    </ng-template>
+  </ion-modal>
+  <!-- modal -->
+</ion-content>
+<ion-footer class="ion-padding ion-text-center">
+  <ion-button class="" color="primary" id="open-modal" expand="block">Continue</ion-button>
+  <ion-button expand="block" fill="clear" class="mt-1 fs-15 fw-500">Save & exit</ion-button>
+</ion-footer>
