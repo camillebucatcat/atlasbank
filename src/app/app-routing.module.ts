@@ -78,6 +78,26 @@ const routes: Routes = [
     path: 'spinner',
     loadChildren: () => import('./pages/apply-for-cards/spinner/spinner.module').then( m => m.SpinnerPageModule)
   },
+  {
+    path: 'main-text-only',
+    loadChildren: () => import('./pages/main-screens/main-text-only/main-text-only.module').then( m => m.MainTextOnlyPageModule)
+  },
+  {
+    path: 'main-text-only',
+    loadChildren: () => import('./pages/main-screens/main-text-only/main-text-only.module').then( m => m.MainTextOnlyPageModule)
+  },
+  {
+    path: 'main-with-card',
+    loadChildren: () => import('./pages/main-screens/main-with-card/main-with-card.module').then( m => m.MainWithCardPageModule)
+  },
+  {
+    path: 'qr',
+    loadChildren: () => import('./pages/main-screens/qr/qr.module').then( m => m.QrPageModule)
+  },
+  {
+    path: 'activity-history',
+    loadChildren: () => import('./pages/main-screens/activity-history/activity-history.module').then( m => m.ActivityHistoryPageModule)
+  },
 
 
 

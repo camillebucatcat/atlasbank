@@ -1,0 +1,238 @@
+<div class="ion-page">
+<ion-content class="main-content">
+  <div class="activity-container mt-2">
+    <div class="ion-padding">
+      <ion-item class="" lines="none">
+        <div slot="start" class="fs-16">Activity History</div>
+        <ion-button slot="end" id="open-modal" fill="clear" class="right-label"><img class="search-icon" src="./assets/icon/icons/icon-filter.svg"></ion-button>
+      </ion-item>
+      <ion-item class="search-input" lines="none">
+        <img class="search-icon" src="./assets/icon/icons/icon-search.svg">
+        <ion-input class="ml-1" placeholder="Search"></ion-input>
+      </ion-item>
+    </div>
+    <div class="separator"></div>
+    <div class="transaction-container ion-padding">
+      <ion-item lines="none" class="mt-1 recent-transactions">
+        <ion-label slot="start">
+          <div class="fs-12 text-dgray2">07012022  •  12:39: 45  •  Tue</div>
+          <div slot="" class="margint-10 fs-18 fw-500 text-dark">Wallmart</div>
+        </ion-label>
+        <ion-label slot="end" class="right-label">
+          <div class="fs-10 fw-800 ion-text-right">PAYMENT</div>
+          <div class="margint-10 fs-18 fw-500 text-danger price=label">-$45.78</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="mt-1 recent-transactions">
+        <ion-label slot="start">
+          <div class="fs-12 text-dgray2">07012022  •  12:39: 45  •  Tue</div>
+          <div slot="" class="margint-10 fs-18 fw-500 text-dark">Walgreens</div>
+        </ion-label>
+        <ion-label slot="end" class="right-label">
+          <div class="fs-10 fw-800 ion-text-right">PAYMENT</div>
+          <div class="margint-10 fs-18 fw-500 text-danger price=label">-$325.78</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="mt-1 recent-transactions">
+        <ion-label slot="start">
+          <div class="fs-12 text-dgray2">07012022  •  12:39: 45  •  Tue</div>
+          <div slot="" class="margint-10 fs-18 fw-500 text-dark">Paypal</div>
+        </ion-label>
+        <ion-label slot="end" class="right-label">
+          <div class="fs-10 fw-800 ion-text-right">REFUND</div>
+          <div class="margint-10 fs-18 fw-500 text-success price=label">$45.78</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="mt-1 recent-transactions">
+        <ion-label slot="start">
+          <div class="fs-12 text-dgray2">07012022  •  12:39: 45  •  Tue</div>
+          <div slot="" class="margint-10 fs-18 fw-500 text-dark">GoDaddy</div>
+        </ion-label>
+        <ion-label slot="end" class="right-label">
+          <div class="fs-10 fw-800 ion-text-right">PAYMENT</div>
+          <div class="margint-10 fs-18 fw-500 text-danger price=label">-$45.78</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="mt-1 recent-transactions">
+        <ion-label slot="start">
+          <div class="fs-12 text-dgray2">07012022  •  12:39: 45  •  Tue</div>
+          <div slot="" class="margint-10 fs-18 fw-500 text-dark">Wallmart</div>
+        </ion-label>
+        <ion-label slot="end" class="right-label">
+          <div class="fs-10 fw-800 ion-text-right">PAYMENT</div>
+          <div class="margint-10 fs-18 fw-500 text-danger price=label">-$45.78</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="mt-1 recent-transactions">
+        <ion-label slot="start">
+          <div class="fs-12 text-dgray2">07012022  •  12:39: 45  •  Tue</div>
+          <div slot="" class="margint-10 fs-18 fw-500 text-dark">Walgreens</div>
+        </ion-label>
+        <ion-label slot="end" class="right-label">
+          <div class="fs-10 fw-800 ion-text-right">PAYMENT</div>
+          <div class="margint-10 fs-18 fw-500 text-danger price=label">-$325.78</div>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none" class="mt-1 recent-transactions">
+        <ion-label slot="start">
+          <div class="fs-12 text-dgray2">07012022  •  12:39: 45  •  Tue</div>
+          <div slot="" class="margint-10 fs-18 fw-500 text-dark">Paypal</div>
+        </ion-label>
+        <ion-label slot="end" class="right-label">
+          <div class="fs-10 fw-800 ion-text-right">REFUND</div>
+          <div class="margint-10 fs-18 fw-500 text-success price=label">$45.78</div>
+        </ion-label>
+      </ion-item>
+    </div>
+    <ion-tabs>
+      <ion-fab vertical="bottom" horizontal="center" class="qr-button" translucent="true">
+        <ion-fab-button>
+          <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="schedule">
+          <ion-icon name="calendar"></ion-icon>
+          <ion-label class="fs-14">Schedule</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="speakers">
+          <ion-icon name="person-circle"></ion-icon>
+          <ion-label class="fs-14">Speakers</ion-label>
+        </ion-tab-button>
+
+        <div class="fs-14 mt-2">QR Code</div>
+    
+        <ion-tab-button tab="map">
+          <ion-icon name="map"></ion-icon>
+          <ion-label class="fs-14">Map</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="about">
+          <ion-icon name="information-circle"></ion-icon>
+          <ion-label class="fs-14">About</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </div>
+ 
+  <!-- modal -->
+  <ion-modal #modal trigger="open-modal" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar class="modal-header">
+          <div class="mt-4 fs-22 modal-title">Fiter Activity History</div>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal.dismiss()"><img class="search-icon" src="./assets/icon/icons/exit-modal.svg"></ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="modal-content">
+        <div class="mt-1 separator2"></div>
+        <div class="ion-padding">
+          <div class="fs-10 fw-800 text-uppercase text-primary">Filter by Date</div>
+          <ion-item lines="none" class="mt-1 fs-14 checkbox-item" >
+            <ion-label class="ml-1">7 days ago</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 fs-14 checkbox-item" >
+            <ion-label class="ml-1">30 days ago</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 fs-14 checkbox-item" >
+            <ion-label class="ml-1">60 days ago</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 mb-1 fs-14 checkbox-item" >
+            <ion-label class="ml-1">2020</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <div class="fs-10 fw-800 text-uppercase text-primary">Date range</div>
+          <ion-row>
+            <ion-col size="5">
+              <ion-item class="date-start" lines="none">
+                <div slot="start" class="fs-12">From</div>
+                <ion-button slot="end" fill="clear" class="right-label2"><img class="" src="./assets/icon/icons/icon-calendar.svg"></ion-button>
+              </ion-item>
+            </ion-col>
+            <div class=""></div>
+            <ion-col size="2" class="ion-text-center">
+              <img class="arrow-right-logo" src="./assets/icon/icons/icon-right.svg">
+            </ion-col>
+            <ion-col size="5">
+              <ion-item class="date-end" lines="none">
+                <div slot="start" class="fs-12">To</div>
+                <ion-button slot="end" fill="clear" class="right-label2"><img class="" src="./assets/icon/icons/icon-calendar.svg"></ion-button>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <div class="fs-10 fw-800 text-uppercase text-primary">Filter By activity Type</div>
+          <ion-item lines="none" class="mt-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">Merchant payments</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">Send money to contact</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">Pay bills</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 mb-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">Topup mobile</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 mb-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">Load wallet</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <div class="fs-10 fw-800 text-uppercase text-primary">Filter by Date</div>
+          <ion-item lines="none" class="mt-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">7 days ago</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">30 days ago</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">60 days ago</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <ion-item lines="none" class="mt-1 mb-1 checkbox-item fs-14" >
+            <ion-label class="ml-1">2020</ion-label>
+            <ion-checkbox slot="start" class="checkbox" color="primary"></ion-checkbox>
+          </ion-item>
+          <div class="fs-10 fw-800 text-uppercase text-primary">Date range</div>
+          <ion-row>
+            <ion-col size="5">
+              <ion-item class="date-start" lines="none">
+                <div slot="start" class="fs-12">From</div>
+                <ion-button slot="end" fill="clear" class=""><img class="" src="./assets/icon/icons/icon-calendar.svg"></ion-button>
+              </ion-item>
+            </ion-col>
+            <div class=""></div>
+            <ion-col size="2" class="ion-text-center">
+              <img class="arrow-right-logo" src="./assets/icon/icons/icon-right.svg">
+            </ion-col>
+            <ion-col size="5">
+              <ion-item class="date-end" lines="none">
+                <div slot="start" class="fs-12">To</div>
+                <ion-button slot="end" fill="clear" class=""><img class="" src="./assets/icon/icons/icon-calendar.svg"></ion-button>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-content>
+      <ion-footer class="ion-padding modal-footer">
+        <ion-button color="primary" expand="block" class="fs-16">Filter</ion-button>
+      </ion-footer>
+    </ng-template>
+  </ion-modal>
+  <!-- modal -->
+
+</ion-content>
+
+</div>

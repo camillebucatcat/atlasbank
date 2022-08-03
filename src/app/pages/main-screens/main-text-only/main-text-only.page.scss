@@ -1,0 +1,37 @@
+ion-content,
+ion-header ion-toolbar{
+  --background:#04508C;
+}
+.settings-logo{
+  height: 24px;
+  width: 24px;
+}
+.total-balance-container{
+    padding-top: 50px;
+}
+.send-money{
+    width: 70px;
+    height: 70px;
+    --background: #033F6E;
+    --border-radius: 56px;
+}
+.activity-section{
+    background-color: white;
+    height: 694px;
+    border-radius: 30px;
+}
+.recent-transactions{
+    --padding-start:1px;
+    --background: white;
+}
+.right-label{
+    margin-right: -10px;
+}
+.price-label{
+    margin-right: -10px;
+}
+.view-button{
+    width: 86px;
+    height: 36px;
+    --border-radius: 33px;
+}

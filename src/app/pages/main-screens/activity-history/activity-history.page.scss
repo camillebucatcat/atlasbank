@@ -1,0 +1,82 @@
+.toolbar{
+    --background: #04508C;
+}
+.main-content{
+    --background: #04508C;
+}
+.activity-container{
+    background-color: white;
+    height: 95vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+ion-item{
+    --background: white;
+    --padding-start:10px
+}
+.right-label{
+    margin-right: -10px;
+}
+.search-input{
+    --background:#E7ECF1;
+    height: 48px;
+    border-radius: 12px;
+    --padding-start:10px;
+    --padding-top:5px;
+}
+.separator{
+    border: 1px solid #E7ECF1;
+}
+.separator2{
+    border: 1px solid #EEEEEE;
+}
+.recent-transactions{
+    --padding-start:1px;
+    --background: white;
+}
+.price-label,
+.right-label{
+    margin-right: -10px;
+}
+.transaction-container{
+    margin-top: -40px;
+}
+.modal-footer,
+.modal-content,
+.modal-header{
+    --background: white;
+    background-color: white;
+}
+.checkbox{
+    --background:#D8D8D8;
+    --border-color:#D8D8D8;
+    --checkmark-width:3px;
+}
+.modal-title{
+    margin-left: 12px;
+}
+.checkbox-item{
+    --padding-start:1px;
+}
+.date-end,
+.date-start{
+    margin-left: -5px;
+    border-bottom:1px solid black;
+}
+.arrow-right-logo{
+    margin-top: 30px;
+    margin-left: -10px;
+}
+ion-tab-bar{
+    height: 92px;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    --background:white;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
+}
+.qr-button{
+    margin-bottom: 55px;
+    height: 60px;
+    width: 60px;
+}

@@ -1,0 +1,100 @@
+ion-content,
+ion-header ion-toolbar{
+  --background:#04508C;
+}
+.settings-logo{
+  height: 24px;
+  width: 24px;
+}
+.card{
+    background-image:url(/assets/images/atlas-card.svg);
+    height: 202px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 30vh;
+    margin: auto;
+}
+.activity-section{
+    background-color: white;
+    height: 694px;
+    border-radius: 30px;
+}
+.recent-transactions{
+    --padding-start:1px;
+    --background: white;
+}
+.right-label{
+    margin-right: -10px;
+}
+.price-label{
+    margin-right: -10px;
+}
+.view-button{
+    width: 86px;
+    height: 36px;
+    --border-radius: 33px;
+}
+.reveal-button{
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    border-radius:100px;
+    margin-right: 0.5rem;
+}
+.item-card{
+    --background: #1C154C;
+    --padding-start:1px;
+    margin-left: -15px;
+}
+.toggle-main{
+    max-height: 24px;
+    --handle-width:20px;
+    margin-right: -20px;
+}
+ion-tabs{
+    ion-fab {
+		margin-bottom: 45px;
+		ion-fab-button {
+			--box-shadow: none;
+		}
+	}
+	ion-tab-bar {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+		--border: 0;
+		--background: transparent;
+		position: absolute;
+		bottom: 0;
+		left:0; right: 0;
+		width: 100%;
+        height: 92px;
+		&:after{
+			content: " ";
+			width: 100%;
+			bottom: 0;
+			background: var(--ion-color-light);
+			position: absolute;
+            height: 45px;
+		}
+		ion-tab-button {
+			--background: var(--ion-color-light);
+		}
+		ion-tab-button.comments {
+			margin-right: 0px;
+			border-top-right-radius: 18px;
+		}
+		ion-tab-button.notifs {
+			margin-left: 0px;
+			border-top-left-radius: 18px;
+		}
+		svg {    
+			width: 72px;
+			margin-top: -35px;
+			path{
+				fill:  var(--ion-color-light);
+			}		
+		}
+	}
+}
+
