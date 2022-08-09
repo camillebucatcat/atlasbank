@@ -60,41 +60,77 @@ ion-tabs{
 		}
 	}
 	ion-tab-bar {
+        box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.25);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
 		--border: 0;
-		--background: transparent;
+		--background: rgb(230, 227, 227);
 		position: absolute;
 		bottom: 0;
 		left:0; right: 0;
-		width: 100%;
+		max-width: 500px;
         height: 92px;
+        margin: auto;
 		&:after{
 			content: " ";
 			width: 100%;
 			bottom: 0;
-			background: var(--ion-color-light);
+			background: white;
 			position: absolute;
-            height: 45px;
+            height: 65px;
 		}
 		ion-tab-button {
-			--background: var(--ion-color-light);
+			--background: white;
 		}
 		ion-tab-button.comments {
 			margin-right: 0px;
-			border-top-right-radius: 18px;
 		}
 		ion-tab-button.notifs {
 			margin-left: 0px;
-			border-top-left-radius: 18px;
 		}
 		svg {    
-			width: 72px;
-			margin-top: -35px;
-			path{
-				fill:  var(--ion-color-light);
-			}		
+			width: 120px;
+            height: 50px;
+			margin-top: -65px;
 		}
 	}
 }
+.tab-label-card,
+.tab-label-activity,
+.tab-label-home{
+    padding-top: 5px;
+}
+.tab-label-more{
+    margin-top: px;
+}
+.more-button{
+    margin-top: -5px;
+}
+.qr-label{
+    position: absolute;
+    left: 13%;
+    top: 120%;
+}
+.qr-button{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+.modal-content{
+    --background: white;
+}
+.item-link-bank-account,
+.item-pay-merchant,
+.item-load-wallet{
+    --min-height:70px;
+    --background:white;
+    --padding-start:25px;
+}
+.link-logo{
+    margin-right: 1.2rem;
+}
+.separator{
+    border-bottom: 1px solid black;
+}
+ion-item{ --border-color: #E7ECF1; }
 

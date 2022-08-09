@@ -66,39 +66,94 @@
       </ion-label>
     </ion-item>
   </div>
+  <!-- modal open more -->
+  <ion-modal handle="false" #modal trigger="open-more-transaction" [initialBreakpoint]="0.30 " [breakpoints]="[0, 0.25, 0.5, 0.75]">
+    <ng-template>
+      <ion-content class="modal-content ">
+        <div class="fs-16 mt-1 ion-padding">More Transactions</div>
+        <ion-item  class="item-load-wallet">
+          <div class="link-logo"><img class="" src="./assets/icon/icons/icon-load-wallet.svg"></div>
+          <div class="fs-16">Load Wallet</div>
+          <div slot="end" class=""><img class="" src="./assets/icon/icons/icon-right2.svg"></div>
+        </ion-item>
+        <ion-item  class="item-pay-merchant">
+          <div class="link-logo"><img class="" src="./assets/icon/icons/icon-pay-merchant.svg"></div>
+          <div class="fs-16">Pay Merchant</div>
+          <div slot="end" class=""><img class="" src="./assets/icon/icons/icon-right2.svg"></div>
+        </ion-item>
+        <ion-item  class="item-link-bank-account">
+          <div class="link-logo"><img class="" src="./assets/icon/icons/icon-link-bank-account.svg"></div>
+          <div class="fs-16">Link Bank Account</div>
+          <div slot="end" class=""><img class="" src="./assets/icon/icons/icon-right2.svg"></div>
+        </ion-item>
+      </ion-content>
+      <ion-footer>
+        <ion-tabs>  
+          <ion-fab vertical="bottom" horizontal="center" translucent="true">
+            <ion-fab-button class="qr-button">
+              <img class="" src="./assets/icon/icons/icon-qrcode.svg">
+            </ion-fab-button>
+            <div class="fs-10 text-dark qr-label">QR Code</div>
+          </ion-fab>
+          <ion-tab-bar slot="bottom" class="ion-no-border">
+            <ion-tab-button tab="">
+              <img class="" src="./assets/icon/icons/icon-home.svg">
+              <div class="text-dark tab-label-home ">Home</div>
+            </ion-tab-button>
+            <ion-tab-button tab="" class="comments">
+              <img class="" src="./assets/icon/icons/icon-card.svg">
+              <ion-badge></ion-badge>
+              <div class="text-dark tab-label-card">My card</div>
+            </ion-tab-button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="128 17 122.5 31">
+              <path d="m 128 18 c 7.606 -1 15.493 1.6657 21.941 6.587 l 18.272 13.9442 c 12.796 9.7659 30.604 9.5442 43.153 -0.5372 l 15.983 -12.8392 c 6.57 -5.2779 14.745 -8.1548 23.172 -8.1548 h -0.521 v 31 h -122 z" stroke="#FFFFFF" fill="white" s/>
+            </svg>
+            <ion-tab-button tab="" class="notifs">
+              <img class="" src="./assets/icon/icons/icon-activity.svg">
+              <ion-badge></ion-badge>
+              <div class="text-dark tab-label-activity">Activity</div>
+            </ion-tab-button>
+            <ion-tab-button tab="">
+              <ion-button size="small" id="open-more-transaction" class="more-button" fill="clear"><img class="" src="./assets/icon/icons/icon-more.svg"></ion-button>
+              <div class="text-dark tab-label-more">More</div>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+      </ion-footer>
+    </ng-template>
+  </ion-modal>
+  <!-- modal open more -->
 </ion-content>
 <ion-footer>
-    <ion-tabs>  
-      <ion-fab vertical="bottom" horizontal="center" translucent="true">
-        <ion-fab-button>
-          <ion-icon name="camera"></ion-icon>
-        </ion-fab-button>
-      </ion-fab>
-      
-      <ion-tab-bar slot="bottom" class="ion-no-border">
-        <ion-tab-button tab="tab-encounters">
-          <ion-icon name="compass"></ion-icon>
-          <div class="">Home</div>
-        </ion-tab-button>
-    
-        <ion-tab-button tab="tab-conversations" class="comments">
-          <ion-icon name="chatbubbles"></ion-icon>
-          <ion-badge></ion-badge>
-          <div class="">My card</div>
-        </ion-tab-button>
-    
-        <svg height="" viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" fill="red" fill-rule="evenodd"></path></svg>
-        
-        <ion-tab-button tab="tab-notifications" class="notifs">
-          <ion-icon name="notifications"></ion-icon>
-          <ion-badge></ion-badge>
-          <div class="">Activity</div>
-        </ion-tab-button>
-    
-        <ion-tab-button tab="tab-profile">
-          <ion-icon name="person"></ion-icon>
-          <div class="">More</div>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
+  <ion-tabs>  
+    <ion-fab vertical="bottom" horizontal="center" translucent="true">
+      <ion-fab-button class="qr-button">
+        <img class="" src="./assets/icon/icons/icon-qrcode.svg">
+      </ion-fab-button>
+      <div class="fs-10 text-dark qr-label">QR Code</div>
+    </ion-fab>
+    <ion-tab-bar slot="bottom" class="ion-no-border">
+      <ion-tab-button tab="">
+        <img class="" src="./assets/icon/icons/icon-home.svg">
+        <div class="text-dark tab-label-home ">Home</div>
+      </ion-tab-button>
+      <ion-tab-button tab="" class="comments">
+        <img class="" src="./assets/icon/icons/icon-card.svg">
+        <ion-badge></ion-badge>
+        <div class="text-dark tab-label-card">My card</div>
+      </ion-tab-button>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="128 17 122.5 31">
+        <path d="m 128 18 c 7.606 -1 15.493 1.6657 21.941 6.587 l 18.272 13.9442 c 12.796 9.7659 30.604 9.5442 43.153 -0.5372 l 15.983 -12.8392 c 6.57 -5.2779 14.745 -8.1548 23.172 -8.1548 h -0.521 v 31 h -122 z" stroke="#FFFFFF" fill="white" s/>
+      </svg>
+      <ion-tab-button tab="" class="notifs">
+        <img class="" src="./assets/icon/icons/icon-activity.svg">
+        <ion-badge></ion-badge>
+        <div class="text-dark tab-label-activity">Activity</div>
+      </ion-tab-button>
+      <ion-tab-button tab="">
+        <ion-button size="small" id="open-more-transaction" class="more-button" fill="clear"><img class="" src="./assets/icon/icons/icon-more.svg"></ion-button>
+        <div class="text-dark tab-label-more">More</div>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-footer>
